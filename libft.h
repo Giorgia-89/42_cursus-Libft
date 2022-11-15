@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 14:34:11 by gd-innoc          #+#    #+#             */
-/*   Updated: 2022/11/14 14:50:01 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2022/11/15 14:44:44 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <ctype.h>
 # include <string.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
