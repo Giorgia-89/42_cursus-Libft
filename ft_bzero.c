@@ -6,7 +6,7 @@
 /*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:03:53 by gd-innoc          #+#    #+#             */
-/*   Updated: 2022/11/03 13:23:38 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2022/11/15 17:02:52 by gd-innoc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*c;
-	size_t	i;
-
-	c = s;
-	i = 0;
-	while (i < n)
-	{
-		c[i] = '\0';
-		i++;
-	}
+	ft_memset(s, 0, n);
 }
-/* all of the above could have been done
-easily with ft_memset:
-void ft_bzero(void * s, size_t n)
-{
-    ft_memset(s, '\0', n)
-}
-
+/* 
 int main()
 {
     char s[100] = "aaaaa";
