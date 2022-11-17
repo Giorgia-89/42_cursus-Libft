@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gd-innoc <gd-innoc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: giorgia <giorgia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:03:53 by gd-innoc          #+#    #+#             */
-/*   Updated: 2022/11/15 17:02:52 by gd-innoc         ###   ########.fr       */
+/*   Updated: 2022/11/17 12:55:11 by giorgia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,16 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, 0, n);
+	char	*c;
+	size_t	i;
+
+	c = s;
+	i = 0;
+	while (i < n)
+	{
+		c[i] = '\0';
+		i++;
+	}
 }
 /* 
 int main()
